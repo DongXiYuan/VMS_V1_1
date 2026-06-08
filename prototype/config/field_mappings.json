@@ -1,0 +1,67 @@
+{
+  "assets": {
+    "sheet": "Sheet1",
+    "header_row": 1,
+    "fields": {
+      "ip": "IP地址",
+      "organization": "组织",
+      "workspace": "工作空间",
+      "project": "归属项目",
+      "owner": "项目负责人"
+    },
+    "required": ["ip", "organization", "workspace", "project", "owner"]
+  },
+  "qingteng": {
+    "sheet": "Sheet1",
+    "header_row": 1,
+    "fields": {
+      "ip": "主机IP",
+      "severity": "危险程度",
+      "vuln_name": "漏洞名称",
+      "vuln_detail": "漏洞描述",
+      "fix_method": "修复建议",
+      "verify_info": "验证信息"
+    },
+    "required": ["ip", "severity", "vuln_name"]
+  },
+  "aliyun": {
+    "sheet": "Sheet1",
+    "header_row": 1,
+    "fields": {
+      "ip": "影响资产IP（私网）",
+      "severity": "修复紧急度",
+      "vuln_name": "漏洞名称",
+      "verify_info": "漏洞说明",
+      "fix_method": "修复建议",
+      "cve": "CVE编号"
+    },
+    "required": ["ip", "severity", "vuln_name"]
+  },
+  "nsfocus_index": {
+    "sheet": "主机信息",
+    "header_row": 2,
+    "fields": {
+      "ip": "IP地址",
+      "high_count": "高危漏洞",
+      "medium_count": "中危漏洞",
+      "low_count": "低危漏洞"
+    },
+    "required": ["ip", "high_count", "medium_count"]
+  },
+  "nsfocus_host": {
+    "sheet": "远程漏洞",
+    "header_row": 2,
+    "fields": {
+      "port": "端口",
+      "protocol": "协议",
+      "service": "服务",
+      "vuln_name": "漏洞名称",
+      "severity": "风险等级",
+      "cve": "CVE编号",
+      "vuln_detail": "详细描述",
+      "fix_method": "解决办法",
+      "verify_info": "返回信息"
+    },
+    "required": ["vuln_name", "severity"]
+  }
+}

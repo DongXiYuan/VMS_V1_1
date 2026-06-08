@@ -1,0 +1,11 @@
+~$*
+**/__pycache__/
+.pytest_cache/
+outputs/
+backend/data/
+samples/
+archives/
+.worktrees/
+test-data/
+**/test-data/
+**/fixtures/private/
